@@ -161,27 +161,7 @@ export default function HomePage() {
                   </Button>
                 </div>
                 
-                {/* Trust Badges */}
-                <div className="flex flex-wrap items-center gap-8 pt-4 border-t border-white/10">
-                  <div className="flex items-center gap-3 text-sm text-gray-400">
-                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
-                      <Truck className="w-4 h-4 text-slate-300" />
-                    </div>
-                    <span>Complimentary<br/>Worldwide Shipping</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm text-gray-400">
-                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
-                      <Shield className="w-4 h-4 text-slate-300" />
-                    </div>
-                    <span>Secure<br/>Transactions</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-sm text-gray-400">
-                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
-                      <RefreshCw className="w-4 h-4 text-slate-300" />
-                    </div>
-                    <span>30-Day<br/>Returns</span>
-                  </div>
-                </div>
+
               </div>
               
               {/* Right Content - Product Showcase */}
@@ -300,21 +280,7 @@ export default function HomePage() {
                 </div>
               </div>
               
-              {/* Trust Badges */}
-              <div className="flex justify-center gap-6 mt-6 px-4">
-                <div className="flex items-center gap-2 text-xs text-gray-400">
-                  <Truck className="w-4 h-4 text-slate-400" />
-                  Free Shipping
-                </div>
-                <div className="flex items-center gap-2 text-xs text-gray-400">
-                  <Shield className="w-4 h-4 text-slate-400" />
-                  Secure
-                </div>
-                <div className="flex items-center gap-2 text-xs text-gray-400">
-                  <RefreshCw className="w-4 h-4 text-slate-400" />
-                  Returns
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
