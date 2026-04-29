@@ -43,9 +43,9 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-30 transition-all duration-300',
+        'fixed top-0 left-0 right-0 z-30 transition-all duration-500',
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm'
+          ? 'bg-black/95 backdrop-blur-md border-b border-amber-500/20 shadow-lg shadow-black/20'
           : 'bg-transparent'
       )}
     >
@@ -58,7 +58,12 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
               alt="LIDYA FASHION"
               className="h-10 w-auto object-contain"
             />
-            <span className="text-xl font-bold tracking-tight text-black" style={{ fontFamily: "'Times New Roman', Times, serif" }}>LIDYA FASHION</span>
+            <span 
+              className="text-xl font-bold tracking-tight text-white" 
+              style={{ fontFamily: "'Times New Roman', Times, serif" }}
+            >
+              LIDYA FASHION
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -69,21 +74,21 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   key={cat.filter}
                   href={cat.href}
                   className={cn(
-                    'text-sm font-medium transition-colors relative py-2',
+                    'text-sm font-medium transition-colors relative py-2 tracking-wide',
                     currentCategory === cat.filter
-                      ? 'text-black'
-                      : 'text-gray-500 hover:text-black'
+                      ? 'text-amber-400'
+                      : 'text-gray-300 hover:text-white'
                   )}
                 >
                   {cat.name}
                   {currentCategory === cat.filter && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-black rounded-full" />
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full" />
                   )}
                 </Link>
               ))}
               <button
                 onClick={openContact}
-                className="text-sm font-medium text-gray-500 hover:text-black transition-colors py-2"
+                className="text-sm font-medium text-gray-300 hover:text-white transition-colors py-2 tracking-wide"
               >
                 Contact
               </button>
@@ -94,12 +99,12 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
           <div className="flex items-center gap-3">
             <button
               onClick={openCart}
-              className="relative p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="relative p-2 hover:bg-white/10 rounded-full transition-colors border border-transparent hover:border-amber-500/30"
               aria-label="Cart"
             >
-              <ShoppingBag className="w-5 h-5 text-black" />
+              <ShoppingBag className="w-5 h-5 text-white" />
               {showCartCount && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-black text-white text-xs font-bold rounded-full flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-r from-amber-500 to-yellow-500 text-black text-xs font-bold rounded-full flex items-center justify-center">
                   {itemCount}
                 </span>
               )}
@@ -108,12 +113,12 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="lg:hidden p-2 hover:bg-white/10 rounded-full transition-colors"
             >
               {isMobileMenuOpen ? (
-                <X className="w-5 h-5 text-black" />
+                <X className="w-5 h-5 text-white" />
               ) : (
-                <Menu className="w-5 h-5 text-black" />
+                <Menu className="w-5 h-5 text-white" />
               )}
             </button>
           </div>
@@ -121,7 +126,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && showFilters && (
-          <div className="lg:hidden py-4 border-t border-gray-100 bg-white/98 backdrop-blur-md absolute left-0 right-0 top-full shadow-2xl">
+          <div className="lg:hidden py-4 border-t border-amber-500/20 bg-black/98 backdrop-blur-md absolute left-0 right-0 top-full shadow-2xl">
             <nav className="flex flex-col gap-2 px-4">
               {categories.map((cat) => (
                 <Link
@@ -129,10 +134,10 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   href={cat.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    'px-4 py-3 rounded-xl text-left text-sm font-medium transition-colors',
+                    'px-4 py-3 rounded-sm text-left text-sm font-medium transition-colors border border-transparent',
                     currentCategory === cat.filter
-                      ? 'bg-gray-100 text-black'
-                      : 'text-gray-500 hover:bg-gray-50 hover:text-black'
+                      ? 'bg-amber-500/10 text-amber-400 border-amber-500/20'
+                      : 'text-gray-300 hover:bg-white/5 hover:text-white'
                   )}
                 >
                   {cat.name}
@@ -143,7 +148,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   setIsMobileMenuOpen(false)
                   openContact()
                 }}
-                className="px-4 py-3 rounded-xl text-left text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-black transition-colors"
+                className="px-4 py-3 rounded-sm text-left text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
               >
                 Contact
               </button>

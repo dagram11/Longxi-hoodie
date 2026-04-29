@@ -11,7 +11,7 @@ import { CheckoutModal } from '@/components/checkout-modal'
 import { TryOnModal } from '@/components/try-on-modal'
 import { ContactModal } from '@/components/contact-modal'
 import { VideoModal } from '@/components/video-modal'
-import { ArrowRight, Sparkles, Truck, Shield, RefreshCw, Star, Play, ChevronRight, Zap } from 'lucide-react'
+import { ArrowRight, Sparkles, Truck, Shield, RefreshCw, Star, Play, ChevronRight, Zap, Diamond, Crown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useCartStore } from '@/store/cart'
 
@@ -88,61 +88,82 @@ export default function HomePage() {
       />
       
       <main className="flex-1 pt-20">
-        {/* Hero Section - Premium White/Black */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white">
-          {/* Decorative Elements */}
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-100 to-transparent" />
-          <div className="absolute top-20 left-10 w-72 h-72 bg-gray-200/50 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gray-200/30 rounded-full blur-3xl" />
+        {/* Hero Section - Luxury Black Gradient */}
+        <section className="relative overflow-hidden min-h-[90vh] lg:min-h-[85vh] bg-gradient-to-br from-black via-zinc-950 to-neutral-950">
+          {/* Luxury Pattern Overlay */}
+          <div className="absolute inset-0 opacity-[0.03]" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }} />
+          
+          {/* Gradient Overlays */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
+          
+          {/* Luxury Glow Effects */}
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[150px] animate-pulse" />
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-yellow-600/10 rounded-full blur-[120px]" />
+          <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px]" />
+          
+          {/* Gold Accent Lines */}
+          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
+          <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-amber-500/30 to-transparent" />
+          
+          {/* Corner Decorations */}
+          <div className="absolute top-8 left-8 w-24 h-24 border-l-2 border-t-2 border-amber-500/30" />
+          <div className="absolute top-8 right-8 w-24 h-24 border-r-2 border-t-2 border-amber-500/30" />
+          <div className="absolute bottom-8 left-8 w-24 h-24 border-l-2 border-b-2 border-amber-500/30" />
+          <div className="absolute bottom-8 right-8 w-24 h-24 border-r-2 border-b-2 border-amber-500/30" />
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             {/* Desktop Hero */}
-            <div className="hidden lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center py-8 lg:py-12">
+            <div className="hidden lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[85vh] py-12">
               {/* Left Content - Desktop Only */}
-              <div className="space-y-4 lg:space-y-6">
-                {/* Badge */}
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white border border-gray-200 shadow-sm">
-                  <Zap className="w-4 h-4 text-yellow-400" />
-                  <span className="text-sm font-medium">Premium Hoodie Collection</span>
+              <div className="space-y-6 lg:space-y-8">
+                {/* Luxury Badge */}
+                <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500/20 via-yellow-500/10 to-amber-500/20 border border-amber-500/30 backdrop-blur-sm">
+                  <Crown className="w-4 h-4 text-amber-400" />
+                  <span className="text-sm font-medium tracking-wider text-amber-200">EXCLUSIVE COLLECTION</span>
+                  <Diamond className="w-4 h-4 text-amber-400" />
                 </div>
                 
                 {/* Main Heading */}
-                <div className="space-y-2 lg:space-y-4">
-                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
-                    <span className="block text-black">Premium</span>
-                    <span className="block bg-gradient-to-r from-black via-gray-700 to-gray-500 bg-clip-text text-transparent">
+                <div className="space-y-4">
+                  <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight">
+                    <span className="block text-white">Premium</span>
+                    <span className="block bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
                       Hoodies
                     </span>
                   </h1>
-                  <p className="text-lg sm:text-xl text-gray-600 max-w-lg leading-relaxed">
-                    Discover our collection of premium hoodies crafted for comfort and style. See yourself in any piece before you buy with AI technology.
+                  <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full" />
+                  <p className="text-lg sm:text-xl text-gray-300 max-w-lg leading-relaxed font-light">
+                    Discover our exclusive collection of premium hoodies crafted for the discerning individual. Experience luxury with AI-powered personalization.
                   </p>
                 </div>
                 
                 {/* CTA Buttons */}
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-4 pt-2">
                   <Button
                     onClick={() => window.location.href = '/upper'}
-                    className="group relative h-14 px-8 rounded-full bg-black text-white font-semibold text-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-black/20 hover:bg-gray-900"
+                    className="group relative h-14 px-10 rounded-sm bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 text-black font-semibold text-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-[1.02]"
                   >
                     <span className="relative z-10 flex items-center gap-2">
-                      Shop Hoodies
+                      Explore Collection
                       <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </Button>
                   <Button
                     variant="outline"
-                    className="h-14 px-8 rounded-full border-gray-300 hover:bg-gray-100 font-semibold text-lg bg-white text-black"
+                    className="h-14 px-8 rounded-sm border-amber-500/30 hover:bg-amber-500/10 hover:border-amber-500/50 font-semibold text-lg bg-transparent text-white backdrop-blur-sm"
                     onClick={openVideo}
                   >
-                    <Play className="w-5 h-5 mr-2" />
-                    Watch Video
+                    <Play className="w-5 h-5 mr-2 text-amber-400" />
+                    Watch Film
                   </Button>
                 </div>
                 
                 {/* Social Proof */}
-                <div className="flex flex-wrap items-center gap-4 lg:gap-6 pt-2">
-                  <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-6 pt-4">
+                  <div className="flex items-center gap-3">
                     <div className="flex -space-x-2">
                       {[
                         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
@@ -150,34 +171,45 @@ export default function HomePage() {
                         'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&h=100&fit=crop',
                         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
                       ].map((src, i) => (
-                        <div key={i} className="w-8 h-8 rounded-full border-2 border-white overflow-hidden shadow-sm relative">
-                          <Image src={src} alt={`User ${i + 1}`} fill sizes="32px" className="object-cover" />
+                        <div key={i} className="w-9 h-9 rounded-full border-2 border-amber-500/50 overflow-hidden shadow-lg relative ring-2 ring-black">
+                          <Image src={src} alt={`User ${i + 1}`} fill sizes="36px" className="object-cover" />
                         </div>
                       ))}
                     </div>
-                    <span className="text-sm text-gray-600">10k+ happy shoppers</span>
+                    <div className="text-sm">
+                      <span className="text-amber-300 font-semibold">10,000+</span>
+                      <span className="text-gray-400 ml-1">satisfied clients</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-1">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                    <span className="text-sm text-gray-600 ml-1">4.9/5 rating</span>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full border border-white/10">
+                    <div className="flex items-center gap-1">
+                      {[1, 2, 3, 4, 5].map((i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                    <span className="text-sm text-gray-300">4.9/5 Excellence</span>
                   </div>
                 </div>
                 
                 {/* Trust Badges */}
-                <div className="flex flex-wrap items-center gap-6 pt-2">
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Truck className="w-4 h-4" />
-                    Free Shipping
+                <div className="flex flex-wrap items-center gap-8 pt-4 border-t border-white/10">
+                  <div className="flex items-center gap-3 text-sm text-gray-400">
+                    <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
+                      <Truck className="w-4 h-4 text-amber-400" />
+                    </div>
+                    <span>Complimentary<br/>Worldwide Shipping</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Shield className="w-4 h-4" />
-                    Secure Checkout
+                  <div className="flex items-center gap-3 text-sm text-gray-400">
+                    <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
+                      <Shield className="w-4 h-4 text-amber-400" />
+                    </div>
+                    <span>Secure<br/>Transactions</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <RefreshCw className="w-4 h-4" />
-                    Easy Returns
+                  <div className="flex items-center gap-3 text-sm text-gray-400">
+                    <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
+                      <RefreshCw className="w-4 h-4 text-amber-400" />
+                    </div>
+                    <span>30-Day<br/>Returns</span>
                   </div>
                 </div>
               </div>
@@ -186,7 +218,8 @@ export default function HomePage() {
               <div className="relative hidden lg:block">
                 <div className="relative">
                   {/* Main Product Image */}
-                  <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-gray-100 shadow-2xl shadow-gray-300/50">
+                  <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-2xl border border-amber-500/20">
+                    <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-black/40 z-10" />
                     <Image
                       src="https://images2.imgbox.com/d1/9b/TnaPdGDW_o.jpeg"
                       alt="Midnight Hoodie"
@@ -194,111 +227,132 @@ export default function HomePage() {
                       sizes="(max-width: 1024px) 0vw, 50vw"
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    {/* Product Label */}
+                    <div className="absolute top-6 left-6 z-20 px-4 py-2 bg-black/80 backdrop-blur-sm border border-amber-500/30 rounded-sm">
+                      <span className="text-xs tracking-widest text-amber-400">SIGNATURE PIECE</span>
+                    </div>
+                    {/* Price Tag */}
+                    <div className="absolute bottom-6 right-6 z-20 px-5 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-sm">
+                      <span className="text-xl font-bold text-black">$85</span>
+                    </div>
                   </div>
                   
                   {/* Floating Secondary Images */}
-                  <div className="absolute -right-8 top-20 w-32 aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-gray-100">
+                  <div className="absolute -right-6 top-24 w-36 aspect-square rounded-sm overflow-hidden shadow-2xl border-2 border-amber-500/30 bg-black">
                     <Image
                       src="https://images2.imgbox.com/08/fb/ecSCAKuT_o.png"
                       alt="Hoodie Detail"
                       fill
-                      sizes="128px"
+                      sizes="144px"
                       className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
                   
-                  <div className="absolute -left-8 bottom-40 w-28 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-gray-100">
+                  <div className="absolute -left-6 bottom-32 w-32 aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border-2 border-amber-500/30 bg-black">
                     <Image
                       src="https://images2.imgbox.com/b2/d2/c5ehDVjh_o.png"
                       alt="Flight Hoodie"
                       fill
-                      sizes="112px"
+                      sizes="128px"
                       className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
+                  
+                  {/* Decorative Elements */}
+                  <div className="absolute -right-12 top-12 w-20 h-20 border border-amber-500/20 rounded-full" />
+                  <div className="absolute -left-12 bottom-20 w-16 h-16 border border-amber-500/20 rounded-full" />
                 </div>
               </div>
             </div>
 
-            {/* Mobile Hero - Card Based Design */}
-            <div className="lg:hidden py-6">
-              {/* Centered Badge - Above Mobile Hero */}
-              <div className="flex justify-center pb-3">
-                <div className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-black text-white text-xs">
-                  <Zap className="w-3 h-3 text-yellow-400" />
-                  <span className="text-[11px] font-medium">Premium Hoodie Collection</span>
+            {/* Mobile Hero - Luxury Card Design */}
+            <div className="lg:hidden min-h-[85vh] flex flex-col justify-center py-6">
+              {/* Centered Badge */}
+              <div className="flex justify-center pb-4">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/20 via-yellow-500/10 to-amber-500/20 border border-amber-500/30">
+                  <Crown className="w-3 h-3 text-amber-400" />
+                  <span className="text-[11px] font-medium tracking-wider text-amber-200">EXCLUSIVE</span>
+                  <Diamond className="w-3 h-3 text-amber-400" />
                 </div>
               </div>
               
-              <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
+              <div className="bg-gradient-to-br from-zinc-900 to-black rounded-sm overflow-hidden border border-amber-500/20 shadow-2xl">
                 <div className="flex">
-                  {/* Left Side - Text Content (38%) */}
-                  <div className="w-[38%] p-4 flex flex-col justify-between">
+                  {/* Left Side - Text Content */}
+                  <div className="w-[40%] p-4 flex flex-col justify-between bg-gradient-to-b from-amber-500/5 to-transparent">
                     <div>
-                      {/* Spring Deal */}
-                      <h3 className="text-lg font-bold text-black leading-tight">
-                        New Arrivals
+                      <h3 className="text-xl font-bold text-white leading-tight">
+                        Premium
+                        <span className="block text-amber-400">Hoodies</span>
                       </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Premium hoodies / AI try-on
+                      <div className="w-12 h-0.5 bg-gradient-to-r from-amber-500 to-transparent mt-2" />
+                      <p className="text-xs text-gray-400 mt-3">
+                        Luxury collection with AI try-on
                       </p>
                     </div>
                     
-                    {/* Buttons */}
-                    <div className="space-y-2 mt-4">
+                    <div className="space-y-2 mt-6">
                       <Button
                         onClick={() => window.location.href = '/upper'}
-                        className="w-full rounded-full bg-black text-white text-xs py-2 h-8"
+                        className="w-full rounded-sm bg-gradient-to-r from-amber-500 to-yellow-500 text-black text-xs font-semibold py-2.5 h-9"
                       >
                         Shop Now
                       </Button>
                       <Button
                         variant="outline"
-                        className="w-full rounded-full border-gray-300 text-xs py-2 h-8 bg-white text-black"
+                        className="w-full rounded-sm border-amber-500/30 text-xs py-2 h-9 bg-transparent text-white hover:bg-amber-500/10"
                         onClick={openVideo}
                       >
-                        <Play className="w-3 h-3 mr-1" />
-                        Watch Video
+                        <Play className="w-3 h-3 mr-1 text-amber-400" />
+                        Watch Film
                       </Button>
                     </div>
                   </div>
                   
-                  {/* Right Side - Image (62%) */}
-                  <div className="w-[62%]">
-                    <div className="aspect-[3/4] rounded-2xl overflow-hidden m-1 relative">
+                  {/* Right Side - Image */}
+                  <div className="w-[60%]">
+                    <div className="aspect-[3/4] overflow-hidden relative">
                       <Image
                         src="https://images2.imgbox.com/d1/9b/TnaPdGDW_o.jpeg"
                         alt="Hoodie Collection"
                         fill
-                        sizes="(max-width: 640px) 62vw, 0vw"
+                        sizes="(max-width: 640px) 60vw, 0vw"
                         className="object-cover object-top"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black/60" />
+                      <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-amber-500 rounded-sm">
+                        <span className="text-xs font-bold text-black">$85</span>
+                      </div>
                     </div>
                   </div>
                 </div>
                 
-                {/* Pagination Dots */}
-                <div className="flex justify-center gap-1.5 py-3">
-                  <div className="w-2 h-2 rounded-full bg-black" />
-                  <div className="w-2 h-2 rounded-full bg-gray-300" />
-                  <div className="w-2 h-2 rounded-full bg-gray-300" />
+                {/* Rating */}
+                <div className="flex justify-center items-center gap-4 py-4 border-t border-amber-500/10">
+                  <div className="flex items-center gap-1">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                      <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-xs text-gray-400">10,000+ satisfied clients</span>
                 </div>
               </div>
               
               {/* Trust Badges */}
-              <div className="flex justify-center gap-4 mt-4 px-4">
-                <div className="flex items-center gap-1 text-xs text-gray-500">
-                  <Truck className="w-3 h-3" />
+              <div className="flex justify-center gap-6 mt-6 px-4">
+                <div className="flex items-center gap-2 text-xs text-gray-400">
+                  <Truck className="w-4 h-4 text-amber-500" />
                   Free Shipping
                 </div>
-                <div className="flex items-center gap-1 text-xs text-gray-500">
-                  <Shield className="w-3 h-3" />
-                  Secure Checkout
+                <div className="flex items-center gap-2 text-xs text-gray-400">
+                  <Shield className="w-4 h-4 text-amber-500" />
+                  Secure
                 </div>
-                <div className="flex items-center gap-1 text-xs text-gray-500">
-                  <RefreshCw className="w-3 h-3" />
-                  Easy Returns
+                <div className="flex items-center gap-2 text-xs text-gray-400">
+                  <RefreshCw className="w-4 h-4 text-amber-500" />
+                  Returns
                 </div>
               </div>
             </div>
