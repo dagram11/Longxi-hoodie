@@ -100,19 +100,19 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
           
           {/* Luxury Glow Effects */}
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[150px] animate-pulse" />
-          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-yellow-600/10 rounded-full blur-[120px]" />
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-white/5 rounded-full blur-[150px] animate-pulse" />
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-slate-400/10 rounded-full blur-[120px]" />
           <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px]" />
           
-          {/* Gold Accent Lines */}
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
-          <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-amber-500/30 to-transparent" />
+          {/* Silver Accent Lines */}
+          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+          <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
           
           {/* Corner Decorations */}
-          <div className="absolute top-8 left-8 w-24 h-24 border-l-2 border-t-2 border-amber-500/30" />
-          <div className="absolute top-8 right-8 w-24 h-24 border-r-2 border-t-2 border-amber-500/30" />
-          <div className="absolute bottom-8 left-8 w-24 h-24 border-l-2 border-b-2 border-amber-500/30" />
-          <div className="absolute bottom-8 right-8 w-24 h-24 border-r-2 border-b-2 border-amber-500/30" />
+          <div className="absolute top-8 left-8 w-24 h-24 border-l-2 border-t-2 border-white/20" />
+          <div className="absolute top-8 right-8 w-24 h-24 border-r-2 border-t-2 border-white/20" />
+          <div className="absolute bottom-8 left-8 w-24 h-24 border-l-2 border-b-2 border-white/20" />
+          <div className="absolute bottom-8 right-8 w-24 h-24 border-r-2 border-b-2 border-white/20" />
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             {/* Desktop Hero */}
@@ -120,21 +120,21 @@ export default function HomePage() {
               {/* Left Content - Desktop Only */}
               <div className="space-y-6 lg:space-y-8">
                 {/* Luxury Badge */}
-                <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500/20 via-yellow-500/10 to-amber-500/20 border border-amber-500/30 backdrop-blur-sm">
-                  <Crown className="w-4 h-4 text-amber-400" />
-                  <span className="text-sm font-medium tracking-wider text-amber-200">EXCLUSIVE COLLECTION</span>
-                  <Diamond className="w-4 h-4 text-amber-400" />
+                <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-white/10 via-white/5 to-white/10 border border-white/20 backdrop-blur-sm">
+                  <Crown className="w-4 h-4 text-slate-300" />
+                  <span className="text-sm font-medium tracking-wider text-slate-200">EXCLUSIVE COLLECTION</span>
+                  <Diamond className="w-4 h-4 text-slate-300" />
                 </div>
                 
                 {/* Main Heading */}
                 <div className="space-y-4">
                   <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight">
                     <span className="block text-white">Premium</span>
-                    <span className="block bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
+                    <span className="block bg-gradient-to-r from-white via-slate-300 to-slate-400 bg-clip-text text-transparent">
                       Hoodies
                     </span>
                   </h1>
-                  <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full" />
+                  <div className="w-24 h-1 bg-gradient-to-r from-white to-slate-400 rounded-full" />
                   <p className="text-lg sm:text-xl text-gray-300 max-w-lg leading-relaxed font-light">
                     Discover our exclusive collection of premium hoodies crafted for the discerning individual. Experience luxury with AI-powered personalization.
                   </p>
@@ -144,7 +144,7 @@ export default function HomePage() {
                 <div className="flex flex-wrap gap-4 pt-2">
                   <Button
                     onClick={() => window.location.href = '/upper'}
-                    className="group relative h-14 px-10 rounded-sm bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 text-black font-semibold text-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-[1.02]"
+                    className="group relative h-14 px-10 rounded-sm bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-white/20 hover:scale-[1.02]"
                   >
                     <span className="relative z-10 flex items-center gap-2">
                       Explore Collection
@@ -153,61 +153,31 @@ export default function HomePage() {
                   </Button>
                   <Button
                     variant="outline"
-                    className="h-14 px-8 rounded-sm border-amber-500/30 hover:bg-amber-500/10 hover:border-amber-500/50 font-semibold text-lg bg-transparent text-white backdrop-blur-sm"
+                    className="h-14 px-8 rounded-sm border-white/30 hover:bg-white/10 hover:border-white/50 font-semibold text-lg bg-transparent text-white backdrop-blur-sm"
                     onClick={openVideo}
                   >
-                    <Play className="w-5 h-5 mr-2 text-amber-400" />
-                    Watch Film
+                    <Play className="w-5 h-5 mr-2 text-slate-300" />
+                    Watch Video
                   </Button>
-                </div>
-                
-                {/* Social Proof */}
-                <div className="flex flex-wrap items-center gap-6 pt-4">
-                  <div className="flex items-center gap-3">
-                    <div className="flex -space-x-2">
-                      {[
-                        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
-                        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-                        'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&h=100&fit=crop',
-                        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
-                      ].map((src, i) => (
-                        <div key={i} className="w-9 h-9 rounded-full border-2 border-amber-500/50 overflow-hidden shadow-lg relative ring-2 ring-black">
-                          <Image src={src} alt={`User ${i + 1}`} fill sizes="36px" className="object-cover" />
-                        </div>
-                      ))}
-                    </div>
-                    <div className="text-sm">
-                      <span className="text-amber-300 font-semibold">10,000+</span>
-                      <span className="text-gray-400 ml-1">satisfied clients</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full border border-white/10">
-                    <div className="flex items-center gap-1">
-                      {[1, 2, 3, 4, 5].map((i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                    <span className="text-sm text-gray-300">4.9/5 Excellence</span>
-                  </div>
                 </div>
                 
                 {/* Trust Badges */}
                 <div className="flex flex-wrap items-center gap-8 pt-4 border-t border-white/10">
                   <div className="flex items-center gap-3 text-sm text-gray-400">
-                    <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
-                      <Truck className="w-4 h-4 text-amber-400" />
+                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+                      <Truck className="w-4 h-4 text-slate-300" />
                     </div>
                     <span>Complimentary<br/>Worldwide Shipping</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-gray-400">
-                    <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
-                      <Shield className="w-4 h-4 text-amber-400" />
+                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+                      <Shield className="w-4 h-4 text-slate-300" />
                     </div>
                     <span>Secure<br/>Transactions</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-gray-400">
-                    <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/20">
-                      <RefreshCw className="w-4 h-4 text-amber-400" />
+                    <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+                      <RefreshCw className="w-4 h-4 text-slate-300" />
                     </div>
                     <span>30-Day<br/>Returns</span>
                   </div>
@@ -218,8 +188,8 @@ export default function HomePage() {
               <div className="relative hidden lg:block">
                 <div className="relative">
                   {/* Main Product Image */}
-                  <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-2xl border border-amber-500/20">
-                    <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-black/40 z-10" />
+                  <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-2xl border border-white/10">
+                    <div className="absolute inset-0 bg-gradient-to-br from-slate-800/20 to-black/40 z-10" />
                     <Image
                       src="https://images2.imgbox.com/d1/9b/TnaPdGDW_o.jpeg"
                       alt="Midnight Hoodie"
@@ -228,17 +198,17 @@ export default function HomePage() {
                       className="object-cover"
                     />
                     {/* Product Label */}
-                    <div className="absolute top-6 left-6 z-20 px-4 py-2 bg-black/80 backdrop-blur-sm border border-amber-500/30 rounded-sm">
-                      <span className="text-xs tracking-widest text-amber-400">SIGNATURE PIECE</span>
+                    <div className="absolute top-6 left-6 z-20 px-4 py-2 bg-black/80 backdrop-blur-sm border border-white/20 rounded-sm">
+                      <span className="text-xs tracking-widest text-slate-300">SIGNATURE PIECE</span>
                     </div>
                     {/* Price Tag */}
-                    <div className="absolute bottom-6 right-6 z-20 px-5 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-sm">
+                    <div className="absolute bottom-6 right-6 z-20 px-5 py-3 bg-white rounded-sm">
                       <span className="text-xl font-bold text-black">$85</span>
                     </div>
                   </div>
                   
                   {/* Floating Secondary Images */}
-                  <div className="absolute -right-6 top-24 w-36 aspect-square rounded-sm overflow-hidden shadow-2xl border-2 border-amber-500/30 bg-black">
+                  <div className="absolute -right-6 top-24 w-36 aspect-square rounded-sm overflow-hidden shadow-2xl border-2 border-white/20 bg-black">
                     <Image
                       src="https://images2.imgbox.com/08/fb/ecSCAKuT_o.png"
                       alt="Hoodie Detail"
@@ -249,7 +219,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
                   
-                  <div className="absolute -left-6 bottom-32 w-32 aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border-2 border-amber-500/30 bg-black">
+                  <div className="absolute -left-6 bottom-32 w-32 aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border-2 border-white/20 bg-black">
                     <Image
                       src="https://images2.imgbox.com/b2/d2/c5ehDVjh_o.png"
                       alt="Flight Hoodie"
@@ -261,8 +231,8 @@ export default function HomePage() {
                   </div>
                   
                   {/* Decorative Elements */}
-                  <div className="absolute -right-12 top-12 w-20 h-20 border border-amber-500/20 rounded-full" />
-                  <div className="absolute -left-12 bottom-20 w-16 h-16 border border-amber-500/20 rounded-full" />
+                  <div className="absolute -right-12 top-12 w-20 h-20 border border-white/10 rounded-full" />
+                  <div className="absolute -left-12 bottom-20 w-16 h-16 border border-white/10 rounded-full" />
                 </div>
               </div>
             </div>
@@ -271,23 +241,23 @@ export default function HomePage() {
             <div className="lg:hidden min-h-[85vh] flex flex-col justify-center py-6">
               {/* Centered Badge */}
               <div className="flex justify-center pb-4">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/20 via-yellow-500/10 to-amber-500/20 border border-amber-500/30">
-                  <Crown className="w-3 h-3 text-amber-400" />
-                  <span className="text-[11px] font-medium tracking-wider text-amber-200">EXCLUSIVE</span>
-                  <Diamond className="w-3 h-3 text-amber-400" />
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-white/10 via-white/5 to-white/10 border border-white/20">
+                  <Crown className="w-3 h-3 text-slate-300" />
+                  <span className="text-[11px] font-medium tracking-wider text-slate-200">EXCLUSIVE</span>
+                  <Diamond className="w-3 h-3 text-slate-300" />
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-zinc-900 to-black rounded-sm overflow-hidden border border-amber-500/20 shadow-2xl">
+              <div className="bg-gradient-to-br from-zinc-900 to-black rounded-sm overflow-hidden border border-white/10 shadow-2xl">
                 <div className="flex">
                   {/* Left Side - Text Content */}
-                  <div className="w-[40%] p-4 flex flex-col justify-between bg-gradient-to-b from-amber-500/5 to-transparent">
+                  <div className="w-[40%] p-4 flex flex-col justify-between bg-gradient-to-b from-white/5 to-transparent">
                     <div>
                       <h3 className="text-xl font-bold text-white leading-tight">
                         Premium
-                        <span className="block text-amber-400">Hoodies</span>
+                        <span className="block text-slate-300">Hoodies</span>
                       </h3>
-                      <div className="w-12 h-0.5 bg-gradient-to-r from-amber-500 to-transparent mt-2" />
+                      <div className="w-12 h-0.5 bg-gradient-to-r from-white to-transparent mt-2" />
                       <p className="text-xs text-gray-400 mt-3">
                         Luxury collection with AI try-on
                       </p>
@@ -296,17 +266,17 @@ export default function HomePage() {
                     <div className="space-y-2 mt-6">
                       <Button
                         onClick={() => window.location.href = '/upper'}
-                        className="w-full rounded-sm bg-gradient-to-r from-amber-500 to-yellow-500 text-black text-xs font-semibold py-2.5 h-9"
+                        className="w-full rounded-sm bg-white text-black text-xs font-semibold py-2.5 h-9"
                       >
                         Shop Now
                       </Button>
                       <Button
                         variant="outline"
-                        className="w-full rounded-sm border-amber-500/30 text-xs py-2 h-9 bg-transparent text-white hover:bg-amber-500/10"
+                        className="w-full rounded-sm border-white/30 text-xs py-2 h-9 bg-transparent text-white hover:bg-white/10"
                         onClick={openVideo}
                       >
-                        <Play className="w-3 h-3 mr-1 text-amber-400" />
-                        Watch Film
+                        <Play className="w-3 h-3 mr-1 text-slate-300" />
+                        Watch Video
                       </Button>
                     </div>
                   </div>
@@ -322,36 +292,26 @@ export default function HomePage() {
                         className="object-cover object-top"
                       />
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black/60" />
-                      <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-amber-500 rounded-sm">
+                      <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-white rounded-sm">
                         <span className="text-xs font-bold text-black">$85</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                
-                {/* Rating */}
-                <div className="flex justify-center items-center gap-4 py-4 border-t border-amber-500/10">
-                  <div className="flex items-center gap-1">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
-                    ))}
-                  </div>
-                  <span className="text-xs text-gray-400">10,000+ satisfied clients</span>
                 </div>
               </div>
               
               {/* Trust Badges */}
               <div className="flex justify-center gap-6 mt-6 px-4">
                 <div className="flex items-center gap-2 text-xs text-gray-400">
-                  <Truck className="w-4 h-4 text-amber-500" />
+                  <Truck className="w-4 h-4 text-slate-400" />
                   Free Shipping
                 </div>
                 <div className="flex items-center gap-2 text-xs text-gray-400">
-                  <Shield className="w-4 h-4 text-amber-500" />
+                  <Shield className="w-4 h-4 text-slate-400" />
                   Secure
                 </div>
                 <div className="flex items-center gap-2 text-xs text-gray-400">
-                  <RefreshCw className="w-4 h-4 text-amber-500" />
+                  <RefreshCw className="w-4 h-4 text-slate-400" />
                   Returns
                 </div>
               </div>

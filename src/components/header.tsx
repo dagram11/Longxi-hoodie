@@ -45,7 +45,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
       className={cn(
         'fixed top-0 left-0 right-0 z-30 transition-all duration-500',
         isScrolled
-          ? 'bg-black/95 backdrop-blur-md border-b border-amber-500/20 shadow-lg shadow-black/20'
+          ? 'bg-black/95 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/20'
           : 'bg-transparent'
       )}
     >
@@ -76,19 +76,19 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   className={cn(
                     'text-sm font-medium transition-colors relative py-2 tracking-wide',
                     currentCategory === cat.filter
-                      ? 'text-amber-400'
-                      : 'text-gray-300 hover:text-white'
+                      ? 'text-white'
+                      : 'text-gray-400 hover:text-white'
                   )}
                 >
                   {cat.name}
                   {currentCategory === cat.filter && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full" />
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-white to-slate-400 rounded-full" />
                   )}
                 </Link>
               ))}
               <button
                 onClick={openContact}
-                className="text-sm font-medium text-gray-300 hover:text-white transition-colors py-2 tracking-wide"
+                className="text-sm font-medium text-gray-400 hover:text-white transition-colors py-2 tracking-wide"
               >
                 Contact
               </button>
@@ -99,12 +99,12 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
           <div className="flex items-center gap-3">
             <button
               onClick={openCart}
-              className="relative p-2 hover:bg-white/10 rounded-full transition-colors border border-transparent hover:border-amber-500/30"
+              className="relative p-2 hover:bg-white/10 rounded-full transition-colors border border-transparent hover:border-white/20"
               aria-label="Cart"
             >
               <ShoppingBag className="w-5 h-5 text-white" />
               {showCartCount && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-r from-amber-500 to-yellow-500 text-black text-xs font-bold rounded-full flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 w-5 h-5 bg-white text-black text-xs font-bold rounded-full flex items-center justify-center">
                   {itemCount}
                 </span>
               )}
@@ -126,7 +126,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && showFilters && (
-          <div className="lg:hidden py-4 border-t border-amber-500/20 bg-black/98 backdrop-blur-md absolute left-0 right-0 top-full shadow-2xl">
+          <div className="lg:hidden py-4 border-t border-white/10 bg-black/98 backdrop-blur-md absolute left-0 right-0 top-full shadow-2xl">
             <nav className="flex flex-col gap-2 px-4">
               {categories.map((cat) => (
                 <Link
@@ -136,8 +136,8 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   className={cn(
                     'px-4 py-3 rounded-sm text-left text-sm font-medium transition-colors border border-transparent',
                     currentCategory === cat.filter
-                      ? 'bg-amber-500/10 text-amber-400 border-amber-500/20'
-                      : 'text-gray-300 hover:bg-white/5 hover:text-white'
+                      ? 'bg-white/10 text-white border-white/20'
+                      : 'text-gray-400 hover:bg-white/5 hover:text-white'
                   )}
                 >
                   {cat.name}
@@ -148,7 +148,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   setIsMobileMenuOpen(false)
                   openContact()
                 }}
-                className="px-4 py-3 rounded-sm text-left text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
+                className="px-4 py-3 rounded-sm text-left text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-white transition-colors"
               >
                 Contact
               </button>
