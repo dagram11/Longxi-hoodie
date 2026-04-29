@@ -158,7 +158,7 @@ async function createUrlWatermark(imageWidth: number): Promise<Buffer> {
         </linearGradient>
       </defs>
       <rect width="100%" height="100%" fill="url(#urlBg)" rx="6"/>
-      <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">lidyafashion.com</text>
+      <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">longxihoodie.store</text>
     </svg>
   `
   return Buffer.from(watermarkSvg)
