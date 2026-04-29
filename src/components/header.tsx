@@ -46,7 +46,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
         'fixed top-0 left-0 right-0 z-30 transition-all duration-500',
         isScrolled
           ? 'bg-black/95 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/20'
-          : 'bg-transparent'
+          : 'bg-black/60 backdrop-blur-sm border-b border-white/5'
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,10 +74,10 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   key={cat.filter}
                   href={cat.href}
                   className={cn(
-                    'text-sm font-medium transition-colors relative py-2 tracking-wide',
+                    'text-sm font-semibold transition-colors relative py-2 tracking-wide',
                     currentCategory === cat.filter
                       ? 'text-white'
-                      : 'text-gray-400 hover:text-white'
+                      : 'text-white/70 hover:text-white'
                   )}
                 >
                   {cat.name}
@@ -88,7 +88,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
               ))}
               <button
                 onClick={openContact}
-                className="text-sm font-medium text-gray-400 hover:text-white transition-colors py-2 tracking-wide"
+                className="text-sm font-semibold text-white/70 hover:text-white transition-colors py-2 tracking-wide"
               >
                 Contact
               </button>
@@ -99,7 +99,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
           <div className="flex items-center gap-3">
             <button
               onClick={openCart}
-              className="relative p-2 hover:bg-white/10 rounded-full transition-colors border border-transparent hover:border-white/20"
+              className="relative p-2.5 bg-white/10 hover:bg-white/20 rounded-full transition-colors border border-white/20"
               aria-label="Cart"
             >
               <ShoppingBag className="w-5 h-5 text-white" />
@@ -113,7 +113,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 hover:bg-white/10 rounded-full transition-colors"
+              className="lg:hidden p-2.5 bg-white/10 hover:bg-white/20 rounded-full transition-colors border border-white/20"
             >
               {isMobileMenuOpen ? (
                 <X className="w-5 h-5 text-white" />
@@ -134,10 +134,10 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   href={cat.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    'px-4 py-3 rounded-sm text-left text-sm font-medium transition-colors border border-transparent',
+                    'px-4 py-3 rounded-xl text-left text-sm font-semibold transition-colors border border-transparent',
                     currentCategory === cat.filter
-                      ? 'bg-white/10 text-white border-white/20'
-                      : 'text-gray-400 hover:bg-white/5 hover:text-white'
+                      ? 'bg-white/15 text-white border-white/20'
+                      : 'text-white/70 hover:bg-white/10 hover:text-white'
                   )}
                 >
                   {cat.name}
@@ -148,7 +148,7 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
                   setIsMobileMenuOpen(false)
                   openContact()
                 }}
-                className="px-4 py-3 rounded-sm text-left text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-white transition-colors"
+                className="px-4 py-3 rounded-xl text-left text-sm font-semibold text-white/70 hover:bg-white/10 hover:text-white transition-colors"
               >
                 Contact
               </button>

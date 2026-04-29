@@ -109,10 +109,10 @@ export default function HomePage() {
           <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
           
           {/* Corner Decorations */}
-          <div className="absolute top-8 left-8 w-24 h-24 border-l-2 border-t-2 border-white/20" />
-          <div className="absolute top-8 right-8 w-24 h-24 border-r-2 border-t-2 border-white/20" />
-          <div className="absolute bottom-8 left-8 w-24 h-24 border-l-2 border-b-2 border-white/20" />
-          <div className="absolute bottom-8 right-8 w-24 h-24 border-r-2 border-b-2 border-white/20" />
+          <div className="absolute top-8 left-8 w-24 h-24 border-l-2 border-t-2 border-white/20 rounded-tl-xl" />
+          <div className="absolute top-8 right-8 w-24 h-24 border-r-2 border-t-2 border-white/20 rounded-tr-xl" />
+          <div className="absolute bottom-8 left-8 w-24 h-24 border-l-2 border-b-2 border-white/20 rounded-bl-xl" />
+          <div className="absolute bottom-8 right-8 w-24 h-24 border-r-2 border-b-2 border-white/20 rounded-br-xl" />
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             {/* Desktop Hero */}
@@ -120,7 +120,7 @@ export default function HomePage() {
               {/* Left Content - Desktop Only */}
               <div className="space-y-6 lg:space-y-8">
                 {/* Luxury Badge */}
-                <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-white/10 via-white/5 to-white/10 border border-white/20 backdrop-blur-sm">
+                <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
                   <Crown className="w-4 h-4 text-slate-300" />
                   <span className="text-sm font-medium tracking-wider text-slate-200">EXCLUSIVE COLLECTION</span>
                   <Diamond className="w-4 h-4 text-slate-300" />
@@ -144,7 +144,7 @@ export default function HomePage() {
                 <div className="flex flex-wrap gap-4 pt-2">
                   <Button
                     onClick={() => window.location.href = '/upper'}
-                    className="group relative h-14 px-10 rounded-sm bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-white/20 hover:scale-[1.02]"
+                    className="group relative h-14 px-10 rounded-full bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-white/20 hover:scale-[1.02]"
                   >
                     <span className="relative z-10 flex items-center gap-2">
                       Explore Collection
@@ -153,7 +153,7 @@ export default function HomePage() {
                   </Button>
                   <Button
                     variant="outline"
-                    className="h-14 px-8 rounded-sm border-white/30 hover:bg-white/10 hover:border-white/50 font-semibold text-lg bg-transparent text-white backdrop-blur-sm"
+                    className="h-14 px-8 rounded-full border-white/30 hover:bg-white/10 hover:border-white/50 font-semibold text-lg bg-transparent text-white backdrop-blur-sm"
                     onClick={openVideo}
                   >
                     <Play className="w-5 h-5 mr-2 text-slate-300" />
@@ -188,7 +188,7 @@ export default function HomePage() {
               <div className="relative hidden lg:block">
                 <div className="relative">
                   {/* Main Product Image */}
-                  <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-2xl border border-white/10">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                     <div className="absolute inset-0 bg-gradient-to-br from-slate-800/20 to-black/40 z-10" />
                     <Image
                       src="https://images2.imgbox.com/d1/9b/TnaPdGDW_o.jpeg"
@@ -198,17 +198,17 @@ export default function HomePage() {
                       className="object-cover"
                     />
                     {/* Product Label */}
-                    <div className="absolute top-6 left-6 z-20 px-4 py-2 bg-black/80 backdrop-blur-sm border border-white/20 rounded-sm">
+                    <div className="absolute top-6 left-6 z-20 px-4 py-2 bg-black/80 backdrop-blur-sm border border-white/20 rounded-full">
                       <span className="text-xs tracking-widest text-slate-300">SIGNATURE PIECE</span>
                     </div>
                     {/* Price Tag */}
-                    <div className="absolute bottom-6 right-6 z-20 px-5 py-3 bg-white rounded-sm">
+                    <div className="absolute bottom-6 right-6 z-20 px-5 py-3 bg-white rounded-full">
                       <span className="text-xl font-bold text-black">$85</span>
                     </div>
                   </div>
                   
                   {/* Floating Secondary Images */}
-                  <div className="absolute -right-6 top-24 w-36 aspect-square rounded-sm overflow-hidden shadow-2xl border-2 border-white/20 bg-black">
+                  <div className="absolute -right-6 top-24 w-36 aspect-square rounded-xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black">
                     <Image
                       src="https://images2.imgbox.com/08/fb/ecSCAKuT_o.png"
                       alt="Hoodie Detail"
@@ -219,7 +219,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
                   
-                  <div className="absolute -left-6 bottom-32 w-32 aspect-[3/4] rounded-sm overflow-hidden shadow-2xl border-2 border-white/20 bg-black">
+                  <div className="absolute -left-6 bottom-32 w-32 aspect-[3/4] rounded-xl overflow-hidden shadow-2xl border-2 border-white/20 bg-black">
                     <Image
                       src="https://images2.imgbox.com/b2/d2/c5ehDVjh_o.png"
                       alt="Flight Hoodie"
@@ -241,14 +241,14 @@ export default function HomePage() {
             <div className="lg:hidden min-h-[85vh] flex flex-col justify-center py-6">
               {/* Centered Badge */}
               <div className="flex justify-center pb-4">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-white/10 via-white/5 to-white/10 border border-white/20">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20">
                   <Crown className="w-3 h-3 text-slate-300" />
                   <span className="text-[11px] font-medium tracking-wider text-slate-200">EXCLUSIVE</span>
                   <Diamond className="w-3 h-3 text-slate-300" />
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-zinc-900 to-black rounded-sm overflow-hidden border border-white/10 shadow-2xl">
+              <div className="bg-gradient-to-br from-zinc-900 to-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                 <div className="flex">
                   {/* Left Side - Text Content */}
                   <div className="w-[40%] p-4 flex flex-col justify-between bg-gradient-to-b from-white/5 to-transparent">
@@ -257,7 +257,7 @@ export default function HomePage() {
                         Premium
                         <span className="block text-slate-300">Hoodies</span>
                       </h3>
-                      <div className="w-12 h-0.5 bg-gradient-to-r from-white to-transparent mt-2" />
+                      <div className="w-12 h-0.5 bg-gradient-to-r from-white to-transparent mt-2 rounded-full" />
                       <p className="text-xs text-gray-400 mt-3">
                         Luxury collection with AI try-on
                       </p>
@@ -266,13 +266,13 @@ export default function HomePage() {
                     <div className="space-y-2 mt-6">
                       <Button
                         onClick={() => window.location.href = '/upper'}
-                        className="w-full rounded-sm bg-white text-black text-xs font-semibold py-2.5 h-9"
+                        className="w-full rounded-full bg-white text-black text-xs font-semibold py-2.5 h-9"
                       >
                         Shop Now
                       </Button>
                       <Button
                         variant="outline"
-                        className="w-full rounded-sm border-white/30 text-xs py-2 h-9 bg-transparent text-white hover:bg-white/10"
+                        className="w-full rounded-full border-white/30 text-xs py-2 h-9 bg-transparent text-white hover:bg-white/10"
                         onClick={openVideo}
                       >
                         <Play className="w-3 h-3 mr-1 text-slate-300" />
@@ -292,7 +292,7 @@ export default function HomePage() {
                         className="object-cover object-top"
                       />
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black/60" />
-                      <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-white rounded-sm">
+                      <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-white rounded-full">
                         <span className="text-xs font-bold text-black">$85</span>
                       </div>
                     </div>
