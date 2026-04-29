@@ -65,7 +65,7 @@ export async function applyWatermarks(
         // Draw URL watermark (bottom-right)
         const urlFontSize = Math.max(20, img.width * 0.03)
         ctx.font = `bold ${urlFontSize}px Arial`
-        const urlText = 'lidyafashion.com'
+        const urlText = 'longxihoodie.store'
         const urlTextWidth = ctx.measureText(urlText).width
 
         // Background fits exactly to text with padding
