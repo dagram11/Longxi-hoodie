@@ -47,10 +47,10 @@ export function ContactModal() {
             <div className="flex items-center gap-2">
               <img
                 src="/logo.png"
-                alt="LIDYA FASHION"
+                alt="LONGXI HOODIE"
                 className="h-10 w-auto object-contain"
               />
-              <span className="text-xl font-bold tracking-tight text-black" style={{ fontFamily: "'Times New Roman', Times, serif" }}>LIDYA FASHION</span>
+              <span className="text-xl font-bold tracking-tight text-black" style={{ fontFamily: "'Times New Roman', Times, serif" }}>LONGXI HOODIE</span>
             </div>
             
             <h1 className="hidden sm:block text-lg font-semibold text-gray-900">Contact Us</h1>

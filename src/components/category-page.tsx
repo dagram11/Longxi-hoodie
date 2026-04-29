@@ -124,10 +124,10 @@ export function CategoryPage({ clothType, title, description }: CategoryPageProp
             <Link href="/" className="flex items-center gap-2">
               <img
                 src="/logo.png"
-                alt="LIDYA FASHION"
+                alt="LONGXI HOODIE"
                 className="h-10 w-auto object-contain"
               />
-              <span className="text-xl font-bold tracking-tight text-black" style={{ fontFamily: "'Times New Roman', Times, serif" }}>LIDYA FASHION</span>
+              <span className="text-xl font-bold tracking-tight text-black" style={{ fontFamily: "'Times New Roman', Times, serif" }}>LONGXI HOODIE</span>
             </Link>
 
             {/* Desktop Navigation */}

@@ -51,7 +51,7 @@ export async function applyWatermarks(
           const fontSize = Math.max(16, img.width * 0.025)
           ctx.font = `bold ${fontSize}px Arial`
           ctx.fillStyle = 'rgba(0, 0, 0, 0.8)'
-          const text = 'LIDYA FASHION'
+          const text = 'LONGXI HOODIE'
           const textWidth = ctx.measureText(text).width
           const textX = img.width - textWidth - padding - 10
           const textY = padding + fontSize + 10

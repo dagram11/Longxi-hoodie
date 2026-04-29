@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LIDYA FASHION - AI Personalized Fashion",
-  description: "Experience fashion like never before with AI-powered personalization technology. See how clothes look on you before you buy.",
-  keywords: ["AI Personalization", "Fashion", "AI", "E-commerce", "Clothes", "Shopping"],
-  authors: [{ name: "LIDYA FASHION Team" }],
+  title: "LONGXI HOODIE - Premium Hoodie Collection",
+  description: "Experience premium hoodies crafted for comfort and style. AI-powered personalization technology to see how clothes look on you before you buy.",
+  keywords: ["Hoodies", "Premium Fashion", "AI Try-On", "Streetwear", "E-commerce", "Shopping"],
+  authors: [{ name: "LONGXI HOODIE Team" }],
   openGraph: {
-    title: "LIDYA FASHION - AI Personalized Fashion",
-    description: "Experience fashion like never before with AI-powered personalization technology.",
+    title: "LONGXI HOODIE - Premium Hoodie Collection",
+    description: "Experience premium hoodies crafted for comfort and style. AI-powered personalization technology.",
     type: "website",
   },
 };

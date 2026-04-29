@@ -16,10 +16,10 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-6">
               <img
                 src="/logo.png"
-                alt="LIDYA FASHION"
+                alt="LONGXI HOODIE"
                 className="h-10 w-auto object-contain"
               />
-              <span className="text-xl font-bold tracking-tight" style={{ fontFamily: "'Times New Roman', Times, serif" }}>LIDYA FASHION</span>
+              <span className="text-xl font-bold tracking-tight" style={{ fontFamily: "'Times New Roman', Times, serif" }}>LONGXI HOODIE</span>
             </Link>
             <p className="text-gray-400 text-sm max-w-md leading-relaxed">
               Premium hoodies crafted for comfort and style. Experience fashion like never before with our AI personalization technology.
@@ -66,7 +66,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-          <p>&copy; 2026 LIDYA FASHION. All rights reserved.</p>
+          <p>&copy; 2026 LONGXI HOODIE. All rights reserved.</p>
           <div className="flex items-center gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

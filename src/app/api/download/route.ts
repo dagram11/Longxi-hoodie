@@ -136,7 +136,7 @@ async function createLogoWatermark(imageWidth: number): Promise<Buffer> {
         </linearGradient>
       </defs>
       <rect width="100%" height="100%" fill="url(#bg)" rx="8"/>
-      <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">LIDYA FASHION</text>
+      <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">LONGXI HOODIE</text>
     </svg>
   `
   return Buffer.from(watermarkSvg)

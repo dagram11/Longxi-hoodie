@@ -55,14 +55,14 @@ export function Header({ currentCategory = 'all', onCategoryChange, showFilters 
           <Link href="/" className="flex items-center gap-2">
             <img
               src="/logo.png"
-              alt="LIDYA FASHION"
+              alt="LONGXI HOODIE"
               className="h-10 w-auto object-contain"
             />
             <span 
               className="text-xl font-bold tracking-tight text-white" 
               style={{ fontFamily: "'Times New Roman', Times, serif" }}
             >
-              LIDYA FASHION
+              LONGXI HOODIE
             </span>
           </Link>
 
