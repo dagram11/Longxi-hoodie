@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate prompts based on category
-    const hoodiePrompt = "Make the person in Image 1 wear the hoodie from Image 2. Keep their face, body, height, pose, location, size, background, and lighting the same. Ensure realistic fabric integration, natural shadows, and accurate colour adaptation so the hoodie blends seamlessly into Image 1. the garment description is it's a top outfit covering hands"
+    const hoodiePrompt = "Make the person in Image 1 wear the hoodie from Image 2. Keep their face, body, height, pose, location, size, background, and lighting the same. Ensure realistic fabric integration, natural shadows, and accurate colour adaptation so the hoodie blends seamlessly into Image 1. the garment description is it's a top outfit covering hands. Don't upscale or apply smoothing filters."
 
     const getPrompt = (_category: string) => {
       return hoodiePrompt
@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
 
     // Create prediction with bytedance/seedream-5-lite model
     const prediction = await replicate.predictions.create({
-      version: '644agnmbgdrmt0cwhwnsz3fe4w',
+      version: 'bytedance/seedream-5-lite',
       input: {
         image_input: [userImage, productImage],
         prompt: prompt,
