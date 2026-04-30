@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
         negative_prompt: 'low quality, bad quality, blurry, distorted, ugly, deformed',
         num_inference_steps: 28,
         guidance_scale: 3.5,
-        seed: Math.floor(Math.random() * 1000000),
+        seed: 42,
       }
     })
 
