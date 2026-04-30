@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
 
     // Create prediction with bytedance/seedream-5-lite model
     const prediction = await replicate.predictions.create({
-      version: 'bytedance/seedream-5-lite',
+      version: '644agnmbgdrmt0cwhwnsz3fe4w',
       input: {
         image_input: [userImage, productImage],
         prompt: prompt,
